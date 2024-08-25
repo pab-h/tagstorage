@@ -11,4 +11,19 @@ contentRouter.post(
     controller.create
 );
 
+contentRouter.get(
+    "/look/:filename",
+    controller.look
+);
+
+contentRouter.get(
+    "/download/:filename",
+    controller.download
+);
+
+contentRouter.delete(
+    "/delete/:filename",
+    controller.delete
+);
+
 export default contentRouter;
